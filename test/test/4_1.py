@@ -16,3 +16,11 @@ print (databook_3)
 databook_3.update(databook_2)
 print (databook_3)
 
+
+print (databook_3.items())
+print(databook_3.keys())
+databook_3.update(databook_2)
+print (databook_3)
+databook_3.update(databook_2)
+print (databook_3)
+
