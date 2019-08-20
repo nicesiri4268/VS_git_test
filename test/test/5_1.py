@@ -23,3 +23,20 @@ list_2 = reversed ("hello,world!") #返回的不是一个列表,
 print(list_1)
 print (list_2)
 print (list(list_2)) #需要使用list () 函数来进行列表化
+
+girls =["alice","bernice","clarice","apple","biiy"]
+boys =["chris","arnold",'bob']
+letterGirls = {}
+for girl in girls:
+    letterGirls.setdefault(girl[0],[]).append(girl) ###为字典赋值为列表,返回值为列表###
+print (letterGirls)
+print ([b+"+"+g for b in boys for g in letterGirls[b[0]]])
+
+dirt = {}
+dirt.setdefault("dirt_2",{})
+print (dirt)
+dirt.setdefault("dirt_2",{}).setdefault("dirt_3",[]).append("siri")
+print (dirt)
+for i in range(10):
+    dirt.setdefault("dirt_2",{}).setdefault("dirt_3",[]).append(i)
+print (dirt)
