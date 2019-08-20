@@ -18,3 +18,8 @@ for index,string in enumerate(strings):
     if "siri" in string:
         strings[index]= "zhu"
 print (strings)
+list_1 =sorted ("hello,world!")
+list_2 = reversed ("hello,world!") #返回的不是一个列表,
+print(list_1)
+print (list_2)
+print (list(list_2)) #需要使用list () 函数来进行列表化
