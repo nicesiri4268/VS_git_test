@@ -40,3 +40,9 @@ print (dirt)
 for i in range(10):
     dirt.setdefault("dirt_2",{}).setdefault("dirt_3",[]).append(i)
 print (dirt)
+print (dirt.setdefault("dirt_2"))  #返回字典的值
+
+exec(input("输入代码: ")) #直接从用户输入端输入代码,这样做极其危险,所以需要把代码放入到作用域之中
+scope ={}
+exec(input("请输入代码(安全方式): "),scope)
+print (scope.keys())
